@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="24sp"
+    android:background="#3C3636"
+    android:layout_marginTop="24sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@color/design_default_color_primary"
+        android:id="@+id/iv_car"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"/>
+
+    <TextView
+        android:id="@+id/tv_car_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:gravity="center"
+        android:text="bmw_m3_gtr"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14sp"
+        android:fontFamily="@font/allerta_stencil"
+        android:gravity="center"
+        android:text="@string/razor"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_car_name" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/_13"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_car_name"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
